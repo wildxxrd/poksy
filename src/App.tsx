@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import pikachuImage from './Images/pika.png'
+import PoksyForm from './Components/PoksyForm';
+import './globalCss.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex-col bg-zinc-700 text-white items-center py-5 justify-center text-center h-screen'>
+        <h1 className=' py-5 text-4xl text-center font-extrabold   md:text-5xl lg:text-6xl '>Poksy</h1>
+          <p className=''>You can't expect to win every single battle, 
+            but love's worth fighting for, and if you're 
+            brave and courageous and never quit, you can come out a winner, just like me.
+          </p>
+        {/* <img className='relative mx-auto py-10 rounded-full w-80 h-80' src={pikachuImage} alt="Pikachu" /> */}
+        <PoksyForm />
     </div>
   );
 }
