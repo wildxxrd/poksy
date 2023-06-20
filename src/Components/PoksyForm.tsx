@@ -204,14 +204,14 @@ const PoksyForm: React.FC = () => {
         src={poksyImage ? poksyImage : pikachuImage}
         alt="Pikachu"
       />
-      <div className="bg-zinc-700 text-white">
+      <div className="bg-zinc-700 text-white font-bagel">
         <ul className="text-lg">
           <li>Poksy Type: {poksyType.join(",")}</li>
           <li>Poksy Abilities: {poksyAbilities.join(", ")}</li>
           <li>Poksy Average Weight: {poksyWeight}</li>
           <div className="flex-row">
             <li>
-              <b>Super Effective Against:</b>
+              Super Effective Against:
               {poksyStrongAgainst.map((Icon, index) => (
                 <div key={index} className="inline-flex mx-1">
                   <Icon color="red" size={25} />
@@ -221,7 +221,7 @@ const PoksyForm: React.FC = () => {
           </div>
           <div className="flex-row">
             <li>
-              <b>Not Effective Against:</b>
+              Not Effective Against:
               {poksyWeakAgainst.map((Icon, index) => (
                 <div key={index} className="inline-flex mx-1">
                   <Icon color="blue" size={25} />
@@ -232,7 +232,7 @@ const PoksyForm: React.FC = () => {
           <div className="flex-row">
             {poksyNotEffect.length > 0 ? (
               <li>
-                <b>Not Effective Against:</b>
+                Not Effective Against:
                 {poksyNotEffect.map((Icon, index) => (
                   <div key={index} className="inline-flex mx-1">
                     <Icon color="green" size={25} />
@@ -245,7 +245,7 @@ const PoksyForm: React.FC = () => {
       </div>
       <form className="flex justify-center py-8 bg-zinc-700 text-white" onSubmit={handleSubmit}>
         <div className="flex-col justify-around">
-          <label className="text-4xl font-medium">
+          <label className="text-4xl font-medium font-bagel">
             Pokemon Name
           </label>
           <br />
@@ -257,7 +257,7 @@ const PoksyForm: React.FC = () => {
           />
           <br />
           <button
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium font-bagel rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="submit"
           >
             Submit
