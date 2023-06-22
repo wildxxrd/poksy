@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/poksy/static/css/main.2fc42771.css",
+    "main.js": "/poksy/static/js/main.196d9d0b.js",
+    "static/js/787.054067f2.chunk.js": "/poksy/static/js/787.054067f2.chunk.js",
+    "static/media/pika.png": "/poksy/static/media/pika.f51a50f5fddbf10c9153.png",
+    "index.html": "/poksy/index.html",
+    "main.2fc42771.css.map": "/poksy/static/css/main.2fc42771.css.map",
+    "main.196d9d0b.js.map": "/poksy/static/js/main.196d9d0b.js.map",
+    "787.054067f2.chunk.js.map": "/poksy/static/js/787.054067f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fc42771.css",
+    "static/js/main.196d9d0b.js"
+  ]
+}
